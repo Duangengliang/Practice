@@ -1,0 +1,164 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+
+    color: #333;
+}
+a:link{text-decoration:none; cursor:pointer; color:red;}  
+a:visited{text-decoration:none; cursor:pointer}  
+a:active{text-decoration:none; cursor:pointer}  
+a:hover{text-decoration:none; cursor:pointer} 
+ul
+{
+    list-style: none;
+}
+/*顶部*/
+.header-top
+{
+    background-color: #dc4b96;
+    background-image: url(../img/top-bgi.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.header-top p
+{
+    font-size: 14px;
+    line-height: 36px;
+
+    margin-bottom: 32px;
+    padding-left: 30px;
+
+    text-align: left;
+
+    color: #fff;
+}
+.header-top img
+{
+    margin-bottom: 32px;
+    padding-top: 7px;
+}
+/*导航*/
+.navbar
+{
+    border-top: 1px dotted #333;
+    border-bottom: 5px solid #dc4b96;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+.navbar-nav li
+{
+    font-size: 16px;
+    line-height: 56px;
+
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+.navbar-default .navbar-nav > li > a
+{
+    margin-right: 50px;
+    margin-left: 15px;
+    padding-right: 0;
+    padding-bottom: 7px;
+    padding-left: 0;
+
+    color: #333;
+    border-bottom: 2px solid #fff;
+}
+.navbar-default .navbar-nav > li > a:hover
+{
+    border-bottom: 2px solid #dc4b96;
+}
+/*底部*/
+.footer
+{
+    text-align: center;
+
+    color: #fff;
+    background-color: #b42968;
+}
+.footer-img-box ul
+{
+    margin-bottom: 0;
+}
+.footer-img-box ul li
+{
+    position: relative;
+
+    display: inline-block;
+
+    list-style: none;
+}
+.footer-img-box ul li .second-img
+{
+    position: absolute;
+    top: -160px;
+
+    display: none;
+}
+.footer-img-box
+{
+    padding-bottom: 20px;
+}
+
+/*返回顶部按钮*/
+.back-to-top
+{
+    font-size: 30px;
+    line-height: 50px;
+
+    position: fixed;
+    top: 80%;
+    right: 20px;
+
+    width: 60px;
+    height: 50px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #eee;
+    border-radius: 5px;
+    background-color: #eee;
+    background-color: #e65699;
+}
+@media only screen and (max-width:1200px)
+{
+    .header-top img
+    {
+        float: right;
+    }
+    .header-top p
+    {
+        text-align: left;
+    }
+    .navbar-default .navbar-nav > li > a
+    {
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width:992px)
+{
+    .navbar-default .navbar-nav > li > a
+    {
+        margin: 0 8px;
+    }
+}
+
+@media only screen and (max-width:767px)
+{
+    .header-top p
+    {
+        text-align: center;
+    }
+    .navbar-nav li
+    {
+        margin-right: 0;
+
+        text-align: center;
+    }
+}
