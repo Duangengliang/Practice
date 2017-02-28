@@ -8,7 +8,7 @@
 {
     font-size: 24px;
     line-height: 48px;
-
+    
     margin-left: 50px;
 
     color: #d8e480;
@@ -122,16 +122,14 @@
 }
 .bottom-right img
 {
+    margin-left: -15px;
+
     transition: transform 1s,padding 1s;
 }
 .bottom-right img:hover
 {
     padding: 70px;
-
-    -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-         -o-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 @media only screen and (max-width:1200px)
@@ -177,12 +175,13 @@
         margin-top: 20px;
         padding: 20px;
     }
+    .bottom-right img
+    {
+        margin: auto;
+    }
     .bottom-right img:hover
     {
-        -webkit-transform: rotate(0);
-            -ms-transform: rotate(0);
-             -o-transform: rotate(0);
-                transform: rotate(0);
+        transform: rotate(0);
     }
 }
 
