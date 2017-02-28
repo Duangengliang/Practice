@@ -17,9 +17,6 @@ $(function(){
 		$(this).parent().find(".second-img").css("display","none");
 	});
 
-	// 返回顶部
-	$(".back-to-top").click(function(){
-		$(document.body).animate({"scrollTop":0});
-	})
+
 })
 	

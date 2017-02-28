@@ -20,9 +20,6 @@ $(function(){
 	})
 
 
-	$(".back-to-top").click(function(){
-		$(document.body).animate({"scrollTop":0});
-	})
 
 
 	$('.bottom-left').hover(function() {
@@ -31,9 +28,4 @@ $(function(){
 		$(this).stop().animate({padding:'40px'}, 500);
 	});
 
-	$('.bottom-right').hover(function() {
-		$(this).stop()
-	}, function() {
-		/* Stuff to do when the mouse leaves the element */
-	});
 })
