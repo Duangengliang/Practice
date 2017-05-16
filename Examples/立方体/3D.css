@@ -1,0 +1,74 @@
+.cube{
+position: relative;
+margin: 100px auto;
+width: 400px;
+height: 400px;
+-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;/*子元素3D*/
+}
+.surface{
+position: absolute;
+top: 0;
+height: 400px;
+width: 400px;
+background-color: #666;
+opacity: 0.8;
+font-style: 70px;
+text-align: center;
+line-height: 400px;
+font-weight: bold;
+border: 1px solid #fff;
+-webkit-transition: all .3s;
+-o-transition: all .3s;
+transition: all .3s;
+color: #fff;
+}
+
+.front{
+-webkit-transform: rotateY(0)   translateZ(200px);
+        transform: rotateY(0)   translateZ(200px);
+}
+.back{
+-webkit-transform: translateZ(-200px) rotateY(180deg);
+        transform: translateZ(-200px) rotateY(180deg);
+}
+.left{
+-webkit-transform: rotateY(-90deg)  translateZ(200px);
+        transform: rotateY(-90deg)  translateZ(200px);
+}
+.right{
+  -webkit-transform: rotateY(90deg)  translateZ(200px);
+          transform: rotateY(90deg)  translateZ(200px);
+}
+.top{
+    -webkit-transform: rotateX(90deg)  translateZ(200px);
+            transform: rotateX(90deg)  translateZ(200px);
+}
+.bottom{
+    -webkit-transform: rotateX(90deg)  translateZ(-200px);
+            transform: rotateX(90deg)  translateZ(-200px);
+}
+.cube:hover{
+    -webkit-animation: rotate 10s;
+            animation: rotate 10s;
+}
+@-webkit-keyframes rotate{
+    from{
+-webkit-transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+-webkit-transform: rotateX(360deg) rotateY(360deg);
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+@keyframes rotate{
+    from{
+-webkit-transform: rotateX(0deg) rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+-webkit-transform: rotateX(360deg) rotateY(360deg);
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
